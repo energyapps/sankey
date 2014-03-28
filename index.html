@@ -3,11 +3,11 @@
 <html class="ocks-org">
 <meta charset="utf-8">
 <title>Sankey Diagram</title>
-<base href="http://bost.ocks.org/mike/sankey/" target="_blank">
+<!-- <base href="http://bost.ocks.org/mike/sankey/" target="_blank"> -->
 
 <style>
 
-@import url(../style.css?aea6f0a);
+@import url(ocks.css);
 
 #chart {
   height: 900px;
@@ -83,7 +83,7 @@ var sankey = d3.sankey()
 
 var path = sankey.link();
 
-d3.json("http://a61057.wks.doe.gov/~daniel.wood/sankey/data.json", function(energy) {
+d3.json("data.json", function(energy) {
 
   sankey
       .nodes(energy.nodes)
